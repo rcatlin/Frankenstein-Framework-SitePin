@@ -1,2 +1,9 @@
 cache/
 *.DS_Store
+bower_components/
+node_modules/
+vendor/
+web/css/
+web/fonts/
+web/js/
+
