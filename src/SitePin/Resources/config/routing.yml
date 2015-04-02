@@ -1,0 +1,44 @@
+homepage:
+    path: /
+    controller: Main:index
+    method: GET
+
+about:
+    path: /about
+    controller: Main:about
+    method: GET
+
+bookmarks:
+    path: /bookmarks
+    controller: Bookmark:show
+    method: GET
+
+bookmark_create:
+    path: /bookmark/create
+    controller: Bookmark:create
+    method: GET
+
+bookmark_save:
+    path: /bookmark/save
+    controller: Bookmark:save
+    method: POST
+
+bookmark_edit:
+    path: /bookmark/{id}/edit
+    controller: Bookmark:edit
+    method: GET
+
+bookmark_update:
+    path: /bookmark/{id}/update
+    controller: Bookmark:update
+    method: POST
+
+bookmark_delete:
+    path: /bookmark/{id}/delete
+    controller: Bookmark:delete
+    method: GET
+
+bookmark_view:
+    path: /bookmark/{id}
+    controller: Bookmark:view
+    method: GET

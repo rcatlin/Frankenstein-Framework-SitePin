@@ -1,0 +1,11 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            {% include 'Bookmark/bookmark.html.twig' with {bookmark: bookmark} %}
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+{% endblock %}

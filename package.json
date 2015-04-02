@@ -1,0 +1,12 @@
+{
+  "name": "SitePin",
+  "author": "Ryan Catlin",
+  "homepage": "http://ryancatlin.info",
+  "version": "0.1.0",
+  "devDependencies": {
+    "bower": "^1.3.12",
+    "grunt": "~0.4.5",
+    "grunt-bowercopy": "^1.2.0",
+    "grunt-cli": "0.1.13"
+  }
+}

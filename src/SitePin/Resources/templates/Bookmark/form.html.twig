@@ -1,0 +1,42 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h1>{{ actionName }} a bookmark</h1>
+            
+            <form action="{{ formAction }}" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                        class="form-control"
+                        type="text"
+                        name="name"
+                        placeholder="Bookmark Name"
+                        {% if bookmark is defined %}value="{{ bookmark.name }}"{% endif %}
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="uri">Uri</label>
+                    <input
+                        class="form-control"
+                        type="text"
+                        name="uri"
+                        placeholder="Bookmark URI"
+                        {% if bookmark is defined %}value="{{ bookmark.uri }}"{% endif %}
+                    />
+                </div>
+                
+                <div class="form-group">
+                    <input class="btn btn-primary" type="submit" value="Submit" />
+                    <a href="/bookmarks" class="btn btn-info" type="button">Cancel</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-2"></div>
+    </div>
+
+{% endblock %}
